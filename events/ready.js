@@ -21,13 +21,5 @@ module.exports = client => {
     console.log("       \::::/    /               \::/____/                             ")
     console.log("        \::/____/                 ~~                                   ")
     console.log("         ~~                                                            ")
-    console.log("")
-    console.log("")
-    console.log("")
-    console.log("")
-    console.log("")
-    console.log("")
-    console.log("")
-    console.log("")
     client.user.setGame("with Nevada Community");
 }
