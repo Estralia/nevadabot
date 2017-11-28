@@ -21,5 +21,18 @@ var reload = (message, cmd) => {
     ).catch(error => console.log(error.stack));
   };
   exports.reload = reload;
+
+  client.on('message', message => {
+    if (message.content === 'nigga') {
+      message.reply('This is a christian server you dumb nonce no racist words');
+    }
+  });
+  
+  
+  client.on('guildMemberAdd', member => {
+    const channel = member.guild.channels.find('name', 'mainchat');
+    if (!channel) return;
+    channel.send(`Welcome to the server, ${member}`);
+  });
   
 client.login(settings.token);
